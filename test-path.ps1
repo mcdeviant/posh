@@ -5,5 +5,5 @@ if (Test-Path -Path $Dir) {
     Remove-Item -Recurse -Force $Dir
 } else {
     Write-Output "Creating DeleteMe directory"
-    New-Item -Path "C:\Users\Documents\" -Name "DeleteMe" ItemType = "directory"
+    New-Item -Path "C:\Users\Documents\" -Name "DeleteMe" -ItemType "directory"
     }
